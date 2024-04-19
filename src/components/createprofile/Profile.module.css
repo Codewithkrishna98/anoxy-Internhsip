@@ -1,0 +1,17 @@
+.input{
+   width: 100%;
+   border:none;
+   outline: none;
+   font-size: large;
+   font-weight: bold;
+}
+.input:hover{
+  border-bottom: 1px solid rgb(176, 163, 163);
+}
+@media (max-width: 600px){
+  .input{
+    width: 50%;
+    border:none;
+   outline: none;
+  }
+}

@@ -1,0 +1,105 @@
+@import url('https://fonts.googleapis.com/css2?family=Butterfly+Kids&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Pacifico&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+#root {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Poppins;
+}
+input{
+  outline:none;
+}
+.header{
+  font-family:Pacifico;
+}
+.btn{
+  background-color: rgb(194, 61, 119);
+  font-size: small;
+  padding: 10px 10px;
+  flex-direction: row;
+  
+}
+.zoom {
+  /* padding: 50px; */
+  /* background-color: green; */
+  transition: transform .2s; /* Animation */
+  /* width: 200px; */
+  /* height: 200px; */
+  /* margin: 0 auto; */
+}
+
+.zoom:hover {
+  transform: scale(1.2); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+}
+@media (max-width: 600px){
+  .effectformob{
+    transition: none;
+  }
+  .effectformob:hover{
+    transform: none;
+  }
+  .textformob{
+    text-align: center;
+  }
+  .btnformob{
+    display: flex;
+    justify-content: center;
+  }
+  .phonenav{
+    display: none;
+  }
+  .phonefooter{
+    display: flex;
+    flex-direction: column;
+  }
+  .phoneicon{
+    display: flex;
+    flex-direction: column;
+  }
+  .phonefooter1{
+    margin: 10px;
+  }
+  .phonefooter2{
+    margin-left: 10px;
+  }
+  .phonespan{
+    width: 50px;
+    font-size: 10px;
+  }
+  .phonebtn{
+    width: 60px;
+    font-size: 10px;
+  }
+  .phonesearchbar{
+display: none;
+  }
+  .phoneheader{
+    font-size: 40px;
+  }
+  .mobilemenu{
+    width: 50px;
+  }
+  .mobilenavbar{
+    padding-right: 2rem;
+  }
+  
+  .mobilefooterdivlast{
+    padding-right: 20px;
+  }
+  .mobilemedia{
+    gap: 8px;
+  }
+  .mediabtn{
+    margin-left: 19px;
+  }
+}
+.searchdiv{
+  border-radius: 5px 0 0 5px;
+}
+.inputdiv{
+  border-radius: 0 5px 5px 0;
+}
